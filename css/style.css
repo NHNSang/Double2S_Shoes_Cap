@@ -53,18 +53,73 @@ header .header_content .header_top .header_currency .nav-item .dropdown-menu li 
   font-weight: 300;
   color: #333333;
 }
-header .header_content .header_navbar .header_navbar .header_right .navber_left .nav-item {
+header .header_content .header_navbar .header_navbar .header_right .navbar .collapse .nav-item {
   padding: 0 10px;
 }
-header .header_content .header_navbar .header_navbar .header_right .navber_left .nav-item .nav-link {
+header .header_content .header_navbar .header_navbar .header_right .navbar .collapse .nav-item:hover ul.dropdown-menu {
+  display: block !important;
+}
+header .header_content .header_navbar .header_navbar .header_right .navbar .collapse .nav-item a.nav-link {
   font-size: 16px;
   font-weight: 500;
   color: #000000;
 }
+header .header_content .header_navbar .header_navbar .header_right .navbar .collapse .nav-item ul.dropdown-menu {
+  display: none !important;
+}
+header .header_content .header_navbar .header_menu ul .nav-item {
+  list-style: none;
+  padding: 0 10px;
+  position: relative;
+}
+header .header_content .header_navbar .header_menu ul .nav-item:first-child:after {
+  display: none;
+}
+header .header_content .header_navbar .header_menu ul .nav-item::after {
+  content: "1";
+  font-size: 11px;
+  background-color: #ffc107;
+  position: absolute;
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  text-align: center;
+  top: -15px;
+  right: -5px;
+}
+header .header_content .header_navbar .header_menu ul .nav-item:last-of-type::after {
+  content: "16";
+  font-size: 11px;
+  background-color: #ffc107;
+  position: absolute;
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  text-align: center;
+  top: -15px;
+  right: -5px;
+}
+header .header_content .header_navbar .header_menu ul .nav-item:hover .dropdown-menu {
+  display: block;
+}
+header .header_content .header_navbar .header_menu ul .nav-item a.dropdown-toggle::after {
+  display: none;
+}
+header .header_content .header_navbar .header_menu ul .nav-item ul.dropdown-menu {
+  padding: 0;
+  transform: translate3d(-150.37037px, 25.9259px, 0px);
+  min-width: 250px;
+}
+header .header_content .header_navbar .header_menu ul .nav-item ul.dropdown-menu .mb-3 {
+  margin: 0 !important;
+}
 header .header_content .header_bottom {
   font-size: 80px;
   position: absolute;
-  top: 0;
+  top: -9px;
+  left: 18px;
 }
 
 .hinhAnh {
@@ -76,10 +131,41 @@ header .header_content .header_bottom {
 }
 .hinhAnh .hinhAnh_content {
   color: #FFFFFF;
-  padding: 50px 0;
+  padding: 70px 0;
 }
-.hinhAnh .hinhAnh_content button {
-  width: 50px;
+.hinhAnh .hinhAnh_content h3 {
+  font-size: 31px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.hinhAnh .hinhAnh_content p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 1.6;
+  width: 40%;
+}
+.hinhAnh .hinhAnh_content button.hinhAnh_button {
+  height: 60px;
+  width: 150px;
+  border: none;
+  position: relative;
+}
+.hinhAnh .hinhAnh_content button.hinhAnh_button::after {
+  content: "";
+  position: absolute;
+  height: 60px;
+  width: 150px;
+  top: 5px;
+  left: 5px;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.hinhAnh .hinhAnh_content button.hinhAnh_button a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
 }
 
 .items_shoes {
@@ -104,16 +190,30 @@ header .header_content .header_bottom {
   top: 0;
   left: 30px;
   background-color: white;
-  width: 93%;
+  width: 85%;
   height: 93%;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.items_shoes .item .item_container .item_img h3 {
+  width: 60%;
+  object-fit: cover;
+  position: relative;
+  top: 2vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.items_shoes .item .item_container .item_img h3 a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
 }
 .items_shoes .item .item_container .item_img img {
   width: 60%;
   object-fit: cover;
   position: relative;
-  top: 4vw;
-  left: 56%;
+  top: 2vw;
+  left: 62%;
   transform: translateX(-50%);
 }/*# sourceMappingURL=style.css.map */
