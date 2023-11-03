@@ -186,9 +186,9 @@ header{
                 right: 0;
                 width: 90%;
                 height: 90%;
-                background-color: #c1f5ee;
+                // background-color: #c1f5ee;
                 border-radius: 10px;
-                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             }
             .item_white_background{
                 position: absolute;
@@ -199,7 +199,6 @@ header{
                 height: 93%;
                 border-radius: 10px;
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                // overflow: hidden;
             }
             .item_img{
                 h3{
@@ -210,7 +209,7 @@ header{
                     left: 50%;
                     transform: translateX(-50%);
                     a{
-                        text-decoration: none;
+                        // text-decoration: underline;
                         @include styleText($fs_4,$fw_500,$color_black);
                     }
                 }
@@ -228,7 +227,53 @@ header{
     }
 }
 
+// FEED BACK
+.feed_back{
+    background-image: url(./../../Asset/img/nike-just-do-it.jfif);
+    height: 350px;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    .feed_back_ovelay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 350px;
+        width: 100%;
+        background-color: rgba(92, 85, 85, 0.7); 
+    }
+    .feed_back_content{
+        z-index: 1;
+        h3{
+            text-align: center;
+            
+        }
+        .slick-feedback{
+            // background-color: red;
+            .slick-track{
+                .feed_card{
+                    padding: 0 30px;
+                    text-align: center;
+                    .card-body{
+                        .card-title{}
+                        .card-text:first-child{}
+                        .card-text:last-child{}
+                    }
+                    img{
+                        height: 100px;
+                        width: 100px;
+                        border: 1px solid;
+                        border-radius: 15px;
+                        margin: 0 auto;
+                    }
+                }
 
+            }
+        }
+    }
+}
 
 
 

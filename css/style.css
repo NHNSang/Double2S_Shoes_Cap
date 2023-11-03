@@ -181,7 +181,6 @@ header .header_content .header_bottom {
   right: 0;
   width: 90%;
   height: 90%;
-  background-color: #c1f5ee;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -204,7 +203,6 @@ header .header_content .header_bottom {
   transform: translateX(-50%);
 }
 .items_shoes .item .item_container .item_img h3 a {
-  text-decoration: none;
   font-size: 18px;
   font-weight: 500;
   color: #000000;
@@ -216,4 +214,39 @@ header .header_content .header_bottom {
   top: 2vw;
   left: 62%;
   transform: translateX(-50%);
+}
+
+.feed_back {
+  background-image: url(./../../Asset/img/nike-just-do-it.jfif);
+  height: 350px;
+  width: 100%;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.feed_back .feed_back_ovelay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 350px;
+  width: 100%;
+  background-color: rgba(92, 85, 85, 0.7);
+}
+.feed_back .feed_back_content {
+  z-index: 1;
+}
+.feed_back .feed_back_content h3 {
+  text-align: center;
+}
+.feed_back .feed_back_content .slick-feedback .slick-track .feed_card {
+  padding: 0 30px;
+  text-align: center;
+}
+.feed_back .feed_back_content .slick-feedback .slick-track .feed_card img {
+  height: 100px;
+  width: 100px;
+  border: 1px solid;
+  border-radius: 15px;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
