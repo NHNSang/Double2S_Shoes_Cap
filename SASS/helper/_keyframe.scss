@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .container {
+    margin: 0 auto;
+    max-width: 1140px;
+  }
+  @media screen and (max-width: 576px) {
+    .container{
+      width: 100%;
+      padding: 0 15px;
+    }
+  }

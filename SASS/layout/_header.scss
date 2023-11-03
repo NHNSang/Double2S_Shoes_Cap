@@ -1,0 +1,250 @@
+// TOP
+.top{
+    background-color: black;
+    padding: 10px;
+    .top_content{
+        .top_title{
+            p{
+                @include styleText ($fs_1,$fw_500,$color_white);
+                margin: 0;
+            }
+        }
+    }
+}
+
+// HEADER
+header{
+    padding: 10px 0;
+    .header_content{
+        position: relative;
+        // HEADER TOP
+        .header_top{
+            .header_currency,.header_languege{
+                .nav-item{
+                    list-style: none;
+                    &:hover .dropdown-menu{
+                        display: block
+                    }
+                    .nav-link {
+                        @include styleText($fs_1,$fw_300,$color_black_blur);
+                    }
+                    .dropdown-menu{
+                        min-width: 100px;
+                        padding: 0;
+                        li{
+                            .dropdown-item{
+                                @include styleText($fs_1,$fw_300,$color_black_blur);
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+        // HEADR NAVBAR
+        .header_navbar{
+            .header_navbar{
+                .header_right{
+                    .navber_left{
+                        .nav-item{
+                            padding: 0 10px;
+                            .nav-link{
+                                @include styleText($fs_3,$fw_500,$color_black)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .header_bottom{
+            font-size: 80px;
+            position: absolute;
+            top: 0;
+        }
+    }
+}
+
+// HÌNH ẢNH
+.hinhAnh{
+    // background-color: #FFADCE;
+    background-image: url(./../../Asset/img/img.jpg.gif);
+    height: 350px;  
+    width: 100%;
+    // background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // background-attachment: local;
+    .hinhAnh_content{
+        color: $color_white;
+        padding: 50px 0;
+        h3{}
+        p{}
+        button{
+            width: 50px;
+        }
+    }
+}
+
+// ITEM
+.items_shoes{
+    padding: 50px 0;
+    .item{
+        .item_container{
+            position: relative;
+            height: 100%;
+            .item_coler_background{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 90%;
+                height: 90%;
+                background-color: #c1f5ee;
+                border-radius: 10px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+            }
+            .item_white_background{
+                position: absolute;
+                top: 0;
+                left: 30px;
+                background-color: white;
+                width: 93%;
+                height: 93%;
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                // overflow: hidden;
+            }
+            .item_img{
+                img{
+                    width: 60%;
+                    object-fit: cover;
+                    position: relative;
+                    top: 4vw;
+                    left: 56%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .header_top{
+//     height: 40px;
+//     .header_top_content{
+//        ul{
+//         li.dropdown{
+//             border-left: 1px solid #cecece;
+//             border-right: 1px solid #cecece;
+//             list-style: none;
+//             &:hover .dropdown-menu{
+//                 display: block;
+//             }
+//             a.dropdown-toggle{
+//                 &::after{
+//                     display: none;
+//                 }
+//             }
+//             .dropdown-menu{
+//                 display: none;
+//             }
+//         }
+//         li{
+//             border-left: 1px solid #cecece;
+//             border-right: 1px solid #cecece;
+//             list-style: none;
+//         }
+//        } 
+//     }
+// }
+// HEADER
+// header{
+//     background-color: #80808030;
+    
+//     // display: none;   
+//     .header_content{
+//         position: relative;
+        
+//         .header_left{
+//             width: 23%;
+//             position: absolute;
+//             z-index: 1;
+//             top: -38px;
+//             img{
+//                 width: 80%;
+                
+//             }
+//         }
+//         .header_right{
+//             width: 70%;
+//             position: absolute;
+//             z-index: 2;
+//             right: 0;
+//             top: 0;
+//             .navbar{
+//                 .navber_left{}
+//                 .navber_right{
+//                     li.dropdown{
+//                         a.dropdown-toggle::after{
+//                             display: none;
+//                         }
+//                     }
+//                 }
+
+//             }
+//         }
+//     }
+//     .carousel{
+//         .your-class{
+            
+//             .slide_1 {
+//                 position: relative;
+//                 .slide_content{
+//                     position: absolute;
+//                     top: 25%;
+//                     left: 0;
+//                 }
+//                 .slide_img{
+//                     margin: 0 auto;
+//                     background-image: url(./../../Asset/img/slider-1.jpg);
+//                     background-position: center;
+//                     background-size: cover;
+//                     min-height: 400px;
+//                     width: 100%;
+//                 }
+//             }
+//             .slide_2 {
+//                 position: relative;
+//                 .slide_content{
+//                     position: absolute;
+//                     top: 25%;
+//                     left: 0;
+//                 }
+//                 .slide_img{
+//                     margin: 0 auto;
+//                     background-image: url(./../../Asset/img/slider-2.jpg);
+//                     background-position: center;
+//                     background-size: cover;
+//                     min-height: 500px;
+//                     width: 100%;
+//                 }
+//             }
+//         }
+//     }
+// }
+// END HEADER
+
+
+// CAROUSEL
+
+// END CAROUSEL

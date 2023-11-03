@@ -1,0 +1,14 @@
+// component dùng chung
+@import './helper/variable';
+@import './helper/variable';
+@import './helper/mixin';
+
+// set up giao diện
+@import './base/custom';
+
+// // layout
+@import './layout/header';
+@import './layout/carouse';
+@import './layout/super';
+@import './layout/blog';
+@import './layout/footer';
