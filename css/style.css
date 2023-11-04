@@ -253,12 +253,63 @@ header .header_content .header_bottom {
   margin: 0 auto;
 }
 
+.blog .blog_content {
+  padding: 50px 0;
+}
+.blog .blog_content h3 {
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: #000000;
+}
+.blog .blog_content .blog_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.blog .blog_content .blog_grid .blog_item {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.blog .blog_content .blog_grid .blog_item .blog_item_left img {
+  padding: 85px 10px;
+}
+.blog .blog_content .blog_grid .blog_item .blog_item_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+}
+.blog .blog_content .blog_grid .blog_item .blog_item_right h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+.blog .blog_content .blog_grid .blog_item .blog_item_right p:first-child {
+  padding-top: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #F6435B;
+}
+.blog .blog_content .blog_grid .blog_item .blog_item_right p:last-child {
+  font-size: 16px;
+  font-weight: 400;
+  color: color_gray;
+}
+.blog .blog_content .blog_grid .blog_item .blog_item_right button {
+  width: 40%;
+  height: 15%;
+}
+.blog .blog_content .blog_grid .blog_item .blog_item_right button a {
+  text-decoration: none;
+}
+
 footer {
   background-color: black;
   height: 330px;
 }
-footer .footer_content {
-  padding: 50px 0;
+footer .footer_content .footer_body {
+  padding-top: 35px;
 }
 footer .footer_content .footer_body .footer_left .footer_find ul li {
   list-style: none;
@@ -306,7 +357,7 @@ footer .footer_content .footer_body .footer_right .footer_transfer .transfer_car
   width: 50px;
 }
 footer .footer_content .footer_coppy {
-  padding: 20px 0;
+  padding-top: 25px;
 }
 footer .footer_content .footer_coppy .coppy_left p {
   font-size: 14px;
@@ -325,4 +376,27 @@ footer .footer_content .footer_coppy .coppy_right ul li a {
   font-size: 14px;
   font-weight: 500;
   color: #9D9DAA;
+}
+
+.cd-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  text-decoration: none;
+  background-color: rgba(108, 117, 125, 0.6509803922);
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #d9cccc;
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: 0.5;
 }/*# sourceMappingURL=style.css.map */
