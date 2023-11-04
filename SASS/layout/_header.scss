@@ -230,24 +230,26 @@ header{
 // FEED BACK
 .feed_back{
     background-image: url(./../../Asset/img/nike-just-do-it.jfif);
-    height: 350px;
+    height: 550px;
     width: 100%;
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    padding: $py_section;
     .feed_back_ovelay{
         position: absolute;
         top: 0;
         left: 0;
-        height: 350px;
+        height: 550px;
         width: 100%;
         background-color: rgba(92, 85, 85, 0.7); 
     }
     .feed_back_content{
-        z-index: 1;
+        z-index: 4;
         h3{
             text-align: center;
+            padding: 30px 0;
             
         }
         .slick-feedback{
@@ -275,9 +277,103 @@ header{
     }
 }
 
+// FOOTER
+footer{
+    background-color: black;
+    height: 330px;
+    .footer_content{
+        padding: $py_section;
+        .footer_body{
+            .footer_left{
+                .footer_find{
+                    ul{
+                        li{
+                            list-style: none;
+                            line-height: 35px;
+                            a{
+                                @include styleText($fs_3,$fw_400,$color_white);
+                                text-decoration: none;
+                                
+                            }
+                        }
+                    }
+                }
+                .footer_help, .footer_about{
+                    ul{
+                        li{
+                            list-style: none;
+                            line-height: 35px;
 
-
-
+                            a{
+                                
+                                @include styleText($fs_3,$fw_400,$color_gray);
+                                text-decoration: none;
+                                
+                            }
+                            a.onTop{
+                                @include styleText($fs_3,$fw_400,$color_white );
+                            }
+                        }
+                    }
+                }
+            }
+            .footer_right{
+                .footer_social{
+                    .footer_icon_social{
+                        margin: 0 10px;;
+                        background-color: #9d9daa66;
+                        height: 30px;
+                        line-height: 30px;
+                        width: 30px;
+                        text-align: center;
+                        border-radius: 50%;
+                        a{
+                            text-decoration: none;
+                            color: $color_white;
+                            i{
+    
+                            }
+                        }
+                    }
+                }
+                .footer_transfer{
+                    .transfer_card{
+                        padding: 20px 5px;
+                        img{
+                            height: 30px;
+                            width: 50px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer_coppy{
+            padding: 20px 0;
+            .coppy_left{
+                p{
+                    @include styleText($fs_2,
+                    $fw_500,
+                    $color_gray);
+                }
+            }
+            .coppy_right{
+                ul{
+                    display: flex;
+                    li{
+                        list-style: none;
+                        padding: 0 10px;
+                        a{
+                            text-decoration: none;
+                            @include styleText($fs_2,
+                            $fw_500,
+                            $color_gray);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
