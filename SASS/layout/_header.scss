@@ -119,12 +119,15 @@ header{
                 }
             }
         }
-        // HEADER BOTTOM
+        // HEADER BOTTOM LOGO
         .header_bottom{
             font-size: 80px;
             position: absolute;
             top: -9px;
             left: 18px;
+            a{
+                color: $color_black;
+            }
         }
     }
 }
@@ -243,25 +246,40 @@ header{
         left: 0;
         height: 550px;
         width: 100%;
-        background-color: rgba(92, 85, 85, 0.7); 
+        background-color: rgba(92, 85, 85, 0.7);
+        h3{
+            text-align: center;
+            @include styleText($fs_6,$fw_bold,$color_white);
+            padding-top: 50px;
+        }
     }
     .feed_back_content{
         z-index: 4;
-        h3{
-            text-align: center;
-            padding: 30px 0;
-            
-        }
         .slick-feedback{
-            // background-color: red;
+            padding-top: 140px;
             .slick-track{
                 .feed_card{
                     padding: 0 30px;
                     text-align: center;
+                    .card-rate{
+                        color: yellow;
+                    }
                     .card-body{
-                        .card-title{}
-                        .card-text:first-child{}
-                        .card-text:last-child{}
+                        .card-title{
+                            @include styleText($fs_3,$fw_bold,
+                            $color_white);
+                            padding: 10px 0;
+                        }
+                        p.card-text:first-of-type{
+                            @include styleText($fs_3,$fw_400,
+                            #c1c1f2);
+                        }
+                        p.card-text:last-of-type{
+                            @include styleText($fs_3,$fw_bold,
+                            $color_white);
+                            padding-bottom: 5px;
+
+                        }
                     }
                     img{
                         height: 100px;
@@ -441,14 +459,7 @@ footer{
     border-radius: 50%;
     border: 1px solid #d9cccc;
 }
-.cd-top--is-visible { // back-to-top button visible
-  visibility: visible;
-  opacity: 1;
-}
 
-.cd-top--fade-out { // reduce button opacity if user keeps scrolling
-  opacity: .5;
-}
 
 
 

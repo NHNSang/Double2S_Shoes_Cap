@@ -121,6 +121,9 @@ header .header_content .header_bottom {
   top: -9px;
   left: 18px;
 }
+header .header_content .header_bottom a {
+  color: #000000;
+}
 
 .hinhAnh {
   background-image: url(./../../Asset/img/img.jpg.gif);
@@ -234,16 +237,42 @@ header .header_content .header_bottom {
   width: 100%;
   background-color: rgba(92, 85, 85, 0.7);
 }
+.feed_back .feed_back_ovelay h3 {
+  text-align: center;
+  font-size: 31px;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding-top: 50px;
+}
 .feed_back .feed_back_content {
   z-index: 4;
 }
-.feed_back .feed_back_content h3 {
-  text-align: center;
-  padding: 30px 0;
+.feed_back .feed_back_content .slick-feedback {
+  padding-top: 140px;
 }
 .feed_back .feed_back_content .slick-feedback .slick-track .feed_card {
   padding: 0 30px;
   text-align: center;
+}
+.feed_back .feed_back_content .slick-feedback .slick-track .feed_card .card-rate {
+  color: yellow;
+}
+.feed_back .feed_back_content .slick-feedback .slick-track .feed_card .card-body .card-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding: 10px 0;
+}
+.feed_back .feed_back_content .slick-feedback .slick-track .feed_card .card-body p.card-text:first-of-type {
+  font-size: 16px;
+  font-weight: 400;
+  color: #c1c1f2;
+}
+.feed_back .feed_back_content .slick-feedback .slick-track .feed_card .card-body p.card-text:last-of-type {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding-bottom: 5px;
 }
 .feed_back .feed_back_content .slick-feedback .slick-track .feed_card img {
   height: 100px;
@@ -390,13 +419,4 @@ footer .footer_content .footer_coppy .coppy_right ul li a {
   text-align: center;
   border-radius: 50%;
   border: 1px solid #d9cccc;
-}
-
-.cd-top--is-visible {
-  visibility: visible;
-  opacity: 1;
-}
-
-.cd-top--fade-out {
-  opacity: 0.5;
 }/*# sourceMappingURL=style.css.map */
