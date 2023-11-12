@@ -2,6 +2,8 @@
 .feature{
     padding-bottom: 50px;
     .feature_content{
+        padding-bottom: 20px;
+
         p{
         @include styleText($fs_3,$fw_bold,$color_black);
         transition: all 0.3s;

@@ -446,6 +446,9 @@ header .header_content .header_bottom a {
 .feature {
   padding-bottom: 50px;
 }
+.feature .feature_content {
+  padding-bottom: 20px;
+}
 .feature .feature_content p {
   font-size: 16px;
   font-weight: bold;
