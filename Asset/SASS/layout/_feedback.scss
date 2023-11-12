@@ -1,0 +1,65 @@
+// FEED BACK
+.feed_back{
+    background-image: url(./../../Asset/img/nike-just-do-it.jfif);
+    height: 550px;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: $py_section;
+    .feed_back_ovelay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 550px;
+        width: 100%;
+        background-color: rgba(92, 85, 85, 0.7);
+        h3{
+            text-align: center;
+            @include styleText($fs_6,$fw_bold,$color_white);
+            padding-top: 50px;
+        }
+    }
+    .feed_back_content{
+        z-index: 4;
+        .slick-feedback{
+            padding-top: 140px;
+            .slick-track{
+                .feed_card{
+                    padding: 0 30px;
+                    text-align: center;
+                    .card-rate{
+                        color: yellow;
+                    }
+                    .card-body{
+                        .card-title{
+                            @include styleText($fs_3,$fw_bold,
+                            $color_white);
+                            padding: 10px 0;
+                            
+                        }
+                        p.card-text:first-of-type{
+                            @include styleText($fs_3,$fw_400,
+                            #c1c1f2);
+                        }
+                        p.card-text:last-of-type{
+                            @include styleText($fs_3,$fw_bold,
+                            $color_white);
+                            padding-bottom: 5px;
+
+                        }
+                    }
+                    img{
+                        height: 100px;
+                        width: 100px;
+                        border: 1px solid;
+                        border-radius: 15px;
+                        margin: 0 auto;
+                    }
+                }
+
+            }
+        }
+    }
+}

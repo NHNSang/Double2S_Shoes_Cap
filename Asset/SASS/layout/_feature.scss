@@ -1,0 +1,47 @@
+// FEATURE
+.feature{
+    padding-bottom: 50px;
+    .feature_content{
+        p{
+        @include styleText($fs_3,$fw_bold,$color_black);
+        transition: all 0.3s;
+        &:hover{
+        @include styleText($fs_3,$fw_bold,#2ed573);
+        }
+        }
+        .feature_product{
+            .feature_card{
+                
+                width: 25%;
+                height: 375px;
+                padding-bottom:15px ;
+                .card{
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
+                    img{}
+                    .card-body{
+                        padding: 0;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        a{
+                            text-decoration: none;
+                            h5{
+                                @include styleText($fs_3,$fw_bold,$color_black_blur );
+                            }
+                        }
+                        .info_stars{
+                            i{
+                                color:#ffc107;
+                            }
+                        }
+                        .info_prices {
+                            .card-text{
+                                @include styleText($fs_3,$fw_bold,$color_black_blur );
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

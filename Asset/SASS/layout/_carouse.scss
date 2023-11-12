@@ -1,0 +1,45 @@
+// HÌNH ẢNH
+.hinhAnh{
+    // background-color: #FFADCE;
+    background-image: url(./../../Asset/img/img.jpg.gif);
+    height: 350px;  
+    width: 100%;
+    // background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // background-attachment: local;
+    .hinhAnh_content{
+        color: $color_white;
+        padding: 70px 0;
+        h3{
+            @include styleText($fs_6,$fw_bold,$color_white);
+        }
+        p{
+            @include styleText($fs_5,$fw_bold,$color_white);
+            line-height: 1.6;
+            width: 40%;
+        }
+        button.hinhAnh_button{
+            height: 60px;
+            width: 150px;
+            border: none;
+            position: relative;
+        
+            &::after{
+                content: '';
+                position: absolute;
+                height: 60px;
+                width: 150px;
+                top: 5px;
+                left: 5px;
+                border-right: 1px solid white;
+                border-bottom: 1px solid white;
+            }
+            a{
+                @include styleText($fs_4,$fw_bold,$color_black);
+                text-decoration: none;
+                
+            }
+        }
+    }
+}

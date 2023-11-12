@@ -1,0 +1,59 @@
+// ITEM
+.items_shoes{
+    padding: 50px 0;
+    .item{
+        .item_container{
+            position: relative;
+            height: 100%;
+            .item_coler_background{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 90%;
+                height: 90%;
+                // background-color: #c1f5ee;
+                border-radius: 10px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+            .item_white_background{
+                position: absolute;
+                top: 0;
+                left: 30px;
+                background-color: white;
+                width: 85%;
+                height: 93%;
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+            .item_img{
+                h3{
+                    width: 60%;
+                    object-fit: cover;
+                    position: relative;
+                    top: 2vw;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    a{
+                        // text-decoration: underline;
+                        @include styleText($fs_4,$fw_500,$color_black);
+                        &:hover{
+                            color: $color_white;
+                            background-color: $color_black;
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+                img{
+                    width: 60%;
+                    object-fit: cover;
+                    position: relative;
+                    top: 2vw;
+                    left: 62%;
+                    transform: translateX(-50%);
+                }
+            }
+            
+        }
+    }
+}

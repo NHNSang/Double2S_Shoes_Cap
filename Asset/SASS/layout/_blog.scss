@@ -1,0 +1,58 @@
+// THE BLOCK
+.blog{
+    .blog_content{
+        padding: $py_section;
+        h3{
+            padding-bottom: 20px;
+            text-align: center;
+            @include styleText($fs_7,$fw_bold,$color_black );
+        }
+        .blog_grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            .blog_item{
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                &:hover{
+                    background-color: $color_gray;
+                }
+                // Left
+                .blog_item_left{
+                    img{
+                        padding: 65px 10px;
+                    }
+                }
+                // Right
+                .blog_item_right{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding-right: 20px;
+                    h4{
+                        @include styleText($fs_5,$fw_bold,$color_black );
+                    }
+                    p:first-of-type{
+                        padding-top: 5px;
+                        @include styleText($fs_1,$fw_300,$color_red );
+                    }
+                    p:last-of-type{
+                        @include styleText($fs_3,$fw_400,color_gray );
+                        
+                    }
+                    button{
+                        width: 40%;
+                        height: 15%;
+                        border: 1px solid $color_black;
+                        a{
+                            text-decoration: none;
+                            @include styleText($fs_3,$fw_400,$color_black);
+                            &:hover{                         
+                                color: red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

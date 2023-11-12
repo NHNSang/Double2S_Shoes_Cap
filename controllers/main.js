@@ -125,4 +125,4 @@ function RanderFeature(arr) {
     }
   
     document.querySelector('.feature_product').innerHTML = content;
-  }
+}
