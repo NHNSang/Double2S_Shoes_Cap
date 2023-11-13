@@ -49,18 +49,24 @@
     /> -->
 
     <!-- ! Owl Carousel -->
-    <!-- <link rel="stylesheet" href="asset/library/owl.carousel.min.css" />
-    <link rel="stylesheet" href="asset/library/owl.theme.default.min.css" /> -->
+    <link rel="stylesheet" href="asset/library/owl.carousel.min.css" />
+    <link rel="stylesheet" href="asset/library/owl.theme.default.min.css" />
 
     <!-- ANIMATION -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="../../Asset/css/style.css" />
+    <link rel="stylesheet" href="../asset/css/style.css" />
   </head>
 
   <body>
@@ -377,10 +383,8 @@
                 <li class="nav-item notifi dropdown">
                   <a
                     class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                    href="./pages/signIn.html"
+                    target="_parent"
                   >
                     <i class="fa-regular fa-user"></i>
                   </a>
@@ -405,7 +409,7 @@
             class="header_bottom d-flex justify-content-between align-items-center"
           >
             <div class="header_logo">
-              <a href="../../index.html">
+              <a href="./index.html">
                 <i class="fa-solid fa-shekel-sign"></i>
               </a>
             </div>
@@ -415,80 +419,35 @@
     </header>
     <!-- END HEADER  -->
 
-    <!-- REGISTER -->
-    <section class="register">
-        <div class="container">
-            <div class="register_content">
-                <div class="container_register" id="container_register">
-                    <div class="form-container sign-up">
-                        <form>
-                            <h1>Create Account</h1>
-                            <div class="social-icons">
-                                <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                                <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                                <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                            </div>
-                            <!-- <span>or use your email for registeration</span> -->
-                            <input type="text" placeholder="Your Name " id="name">
-                            <input type="email" placeholder="Your Email" id="email">
-                            <input type="phone" placeholder="Your Phone" id="phone">
-                            <input type="password" placeholder="Your Password" id="password">
-                            <input type="password" placeholder="Your Password Confirm">
-                            <div class="d-flex justify-content-between align-items-center" style="width: 100%;">
-                                <p>GENDER</p>
-                                <div class="radio-male d-flex align-items-center justify-content-between" id="gender">
-                                    <input type="radio" name="MALE" id="true" >
-                                <label for="" style="padding-left: 10px;">Male</label>
-                                </div>
-                                <div class="radio-female d-flex align-items-center justify-content-between" id="gender">
-                                    <input type="radio" name="FEMALE" id="false" >
-                                    <label for="" style="padding-left: 10px;">Female</label>
-                                </div>
-                                
-                                
-
-                            </div>
-                            
-                            <button>Sign Up</button>
-                        </form>
-                    </div>
-                    <div class="form-container sign-in">
-                        <form>
-                            <h1>Sign In</h1>
-                            <div class="social-icons">
-                                <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                                <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                                <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                            </div>
-                            <span>or use your email password</span>
-                            <input type="email" placeholder="Email">
-                            <input type="password" placeholder="Password">
-                            <a href="#">Forget Your Password?</a>
-                            <button>Sign In</button>
-                        </form>
-                    </div>
-                    <div class="toggle-container">
-                        <div class="toggle">
-                            <div class="toggle-panel toggle-left">
-                                <h1>Welcome Back!</h1>
-                                <p>Enter your personal details to use all of site features</p>
-                                <button class="hidden" id="login">Sign In</button>
-                            </div>
-                            <div class="toggle-panel toggle-right">
-                                <h1>Hello, Friend!</h1>
-                                <p>Register with your personal details to use all of site features</p>
-                                <button class="hidden" id="register">Sign Up</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="location_detail">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="location">
+              <ul>
+                <li>
+                  <a href="../index.html" title="go to homepage"
+                    >Home<span>/</span></a
+                  >
+                </li>
+                <li><strong> Detail Shoes</strong></li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
+    </div>
 
-    </section>
-    <!-- END REGISTER -->
+    <!-- FEATURE -->
+    <!-- <section class="feature">
+      <div class="container">
+        <div class="feature_content">
+          <h1 class="text-center">FEATURE PRODUCT</h1>
+          <div class="feature_product row"></div>
+        </div>
+      </div>
+    </section> -->
+    <!-- END FEATURE -->
 
     <!-- FOOTER -->
     <footer>
@@ -548,22 +507,22 @@
               <!-- Transfer -->
               <div class="footer_transfer d-flex">
                 <div class="transfer_card">
-                  <img src="../../Asset/img/ApplePay.png" alt="" />
+                  <img src="../asset/img/ApplePay.png" alt="" />
                 </div>
                 <div class="transfer_card">
-                  <img src="../../asset/img/amex.png" alt="" />
+                  <img src="../asset/img/amex.png" alt="" />
                 </div>
                 <div class="transfer_card">
-                  <img src="../../asset/img/JCB.png" alt="" />
+                  <img src="../asset/img/JCB.png" alt="" />
                 </div>
                 <div class="transfer_card">
-                  <img src="../../asset/img/Master.png" alt="" />
+                  <img src="../asset/img/Master.png" alt="" />
                 </div>
                 <div class="transfer_card">
-                  <img src="../../asset/img/Paypal.png" alt="" />
+                  <img src="../asset/img/Paypal.png" alt="" />
                 </div>
                 <div class="transfer_card">
-                  <img src="../../asset/img/Visa.png" alt="" />
+                  <img src="../asset/img/Visa.png" alt="" />
                 </div>
               </div>
             </div>
@@ -623,8 +582,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
-    <!-- <script src="asset/library/owl.carousel.min.js"></script> -->
+    <script src="Asset/library/owl.carousel.min.js"></script>
     <script>
       $(document).ready(function () {
         $(".your-class").slick({
@@ -650,28 +608,55 @@
         });
       });
     </script>
-        <script>
-          $(document).ready(function () {
-            $(".product-slick-carousel").slick({
-              dots: true,
-              autoplay: true, // Bật chế độ tự động trượt
-              autoplaySpeed: 1000, // Thời gian trễ giữa các slide
-              nextArrow: false, // Tắt nút Next
-              prevArrow: false, // Tắt nút Previous
-              infinite: true,
-              // slidesToShow: 1,
-              // slidesToScroll: 1,
-            });
-          });
-        </script>
+    <script>
+      $(document).ready(function () {
+        $(".product-slick-carousel").slick({
+          dots: true,
+          autoplay: true, // Bật chế độ tự động trượt
+          autoplaySpeed: 1000, // Thời gian trễ giữa các slide
+          nextArrow: false, // Tắt nút Next
+          prevArrow: false, // Tắt nút Previous
+          infinite: true,
+          // slidesToShow: 1,
+          // slidesToScroll: 1,
+        });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          autoplay: true,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1000: {
+              items: 3,
+            },
+          },
+        });
+        $("#customer-carousel").owlCarousel({
+          dots: true,
+        });
+      });
+    </script>
 
     <!-- AXIOS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.min.js" integrity="sha512-m9S8W3a9hhBHPFAbEIaG7J9P92dzcAWwM42VvJp5n1/M599ldK6Z2st2SfJGsX0QR4LfCVr681vyU5vW8d218w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.min.js"
+      integrity="sha512-m9S8W3a9hhBHPFAbEIaG7J9P92dzcAWwM42VvJp5n1/M599ldK6Z2st2SfJGsX0QR4LfCVr681vyU5vW8d218w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-
-        <!-- MAIN JS -->
-    <!-- <script src="../controllers/helper.js"></script> -->
-    <script src="../../controllers/register.js"></script>
+    <!-- MAIN JS -->
+    <script src="./controllers/helper.js"></script>
     <script src="./controllers/main.js"></script>
   </body>
 </html>

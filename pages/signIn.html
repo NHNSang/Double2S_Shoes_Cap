@@ -49,8 +49,8 @@
     /> -->
 
     <!-- ! Owl Carousel -->
-    <link rel="stylesheet" href="asset/library/owl.carousel.min.css" />
-    <link rel="stylesheet" href="asset/library/owl.theme.default.min.css" />
+    <!-- <link rel="stylesheet" href="asset/library/owl.carousel.min.css" />
+    <link rel="stylesheet" href="asset/library/owl.theme.default.min.css" /> -->
 
     <!-- ANIMATION -->
     <link
@@ -66,7 +66,7 @@
     />
 
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="../asset/css/style.css" />
+    <link rel="stylesheet" href="../../Asset/css/style.css" />
   </head>
 
   <body>
@@ -383,8 +383,10 @@
                 <li class="nav-item notifi dropdown">
                   <a
                     class="nav-link dropdown-toggle"
-                    href="./pages/signIn.html"
-                    target="_parent"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
                   >
                     <i class="fa-regular fa-user"></i>
                   </a>
@@ -409,7 +411,7 @@
             class="header_bottom d-flex justify-content-between align-items-center"
           >
             <div class="header_logo">
-              <a href="./index.html">
+              <a href="../../index.html">
                 <i class="fa-solid fa-shekel-sign"></i>
               </a>
             </div>
@@ -419,500 +421,145 @@
     </header>
     <!-- END HEADER  -->
 
-    <!-- HÌNH ẢNH -->
-    <section class="hinhAnh">
+    <!-- REGISTER -->
+    <section class="register">
       <div class="container">
-        <div class="hinhAnh_content d-flex flex-column justify-content-start">
-          <h3>WEEK OF DEALS</h3>
-          <p>
-            Refresh your style for fall with huge savings, 11/1 through 11/8.
-          </p>
-          <button class="hinhAnh_button">
-            <a href="">
-              SHOP NOW
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </button>
-        </div>
-      </div>
-    </section>
-    <!-- END HÌNH ẢNH -->
-
-    <!-- ITEM -->
-    <section class="items_shoes">
-      <div class="container row">
-        <!-- item 1  -->
-        <div class="item col-4">
-          <div class="item_container">
-            <div
-              class="item_coler_background"
-              style="background-color: #02a7af"
-            ></div>
-            <div class="item_white_background"></div>
-            <div class="item_img">
-              <h3>
-                <a href="">For Running</a>
-              </h3>
-              <img src="../asset/img/banner_01.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <!-- item 2  -->
-        <div class="item col-4">
-          <div class="item_container">
-            <div
-              class="item_coler_background"
-              style="background-color: rgb(227, 157, 208)"
-            ></div>
-            <div class="item_white_background"></div>
-            <div class="item_img">
-              <h3><a href=""> For Soccer</a></h3>
-              <img src="./../Asset/img/banner_02.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <!-- item 3  -->
-        <div class="item col-4">
-          <div class="item_container">
-            <div
-              class="item_coler_background"
-              style="background-color: #81c868"
-            ></div>
-            <div class="item_white_background"></div>
-            <div class="item_img">
-              <h3><a href=""> For Lifestyle</a></h3>
-              <img src="./../Asset/img/banner_03.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END ITEM -->
-
-    <!-- PRODUCT SHOES -->
-    <section class="product__list">
-      <div class="container">
-        <div class="products">
-          <div class="row">
-            <div class="col-lg-3">
-              <div class="product__menu">
-                <div class="product__title">
-                  <h2>Best Seller <strong>Products</strong></h2>
+        <div class="register_content">
+          <div class="container_register" id="container_register">
+            <div class="form-container sign-up">
+              <form>
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                  <a href="#" class="icon"
+                    ><i class="fa-brands fa-google-plus-g"></i
+                  ></a>
+                  <a href="#" class="icon"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="icon"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="#" class="icon"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
                 </div>
-                <div class="menu__slide">
-                  <!-- Nav tabs -->
-                  <ul class="nav nav-tabs rounded-0" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link active"
-                        id="all-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#all"
-                        type="button"
-                        role="tab"
-                        aria-controls="all"
-                        aria-selected="true"
-                      >
-                        All
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link"
-                        id="men-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#men"
-                        type="button"
-                        role="tab"
-                        aria-controls="men"
-                        aria-selected="false"
-                      >
-                        Men
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link"
-                        id="women-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#women"
-                        type="button"
-                        role="tab"
-                        aria-controls="women"
-                        aria-selected="false"
-                      >
-                        Women
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link"
-                        id="nike-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#nike"
-                        type="button"
-                        role="tab"
-                        aria-controls="nike"
-                        aria-selected="false"
-                      >
-                        Nike
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link"
-                        id="adidas-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#adidas"
-                        type="button"
-                        role="tab"
-                        aria-controls="adidas"
-                        aria-selected="false"
-                      >
-                        Adidas
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link"
-                        id="converse-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#converse"
-                        type="button"
-                        role="tab"
-                        aria-controls="converse"
-                        aria-selected="false"
-                      >
-                        Converse
-                      </button>
-                    </li>
-                    <li>
-                      <img src="Asset/img/banner_01.png" alt="" />
-                    </li>
-                  </ul>
-
-                  <!-- Tab panes -->
+                <!-- <span>or use your email for registeration</span> -->
+                <input type="text" placeholder="Your Name " id="name" />
+                <input type="email" placeholder="Your Email" id="email" />
+                <input type="phone" placeholder="Your Phone" id="phone" />
+                <input
+                  type="password"
+                  placeholder="Your Password"
+                  id="password"
+                />
+                <input
+                  type="password"
+                  placeholder="Your Password Confirm"
+                  id="confirmPass"
+                />
+                <div
+                  class="d-flex justify-content-between align-items-center w-100"
+                >
+                  <p>GENDER</p>
+                  <div class="d-flex justify-content-between">
+                    <input
+                      type="radio"
+                      id="male"
+                      name="gender"
+                      value="male"
+                      checked
+                    />
+                    <label for="male">Male</label>
+                    <input
+                      type="radio"
+                      id="female"
+                      name="gender"
+                      value="female"
+                    />
+                    <label for="female">Female</label>
+                  </div>
                 </div>
-              </div>
+
+                <button id="createUser">Sign Up</button>
+              </form>
             </div>
-            <div class="col-lg-9">
-              <div class="row py-5">
-                <div class="tab-content">
-                  <div
-                    class="tab-pane active"
-                    id="all"
-                    role="tabpanel"
-                    aria-labelledby="all-tab"
-                  >
-                    <div id="flash_shoes" class="owl-carousel"></div>
-                    <!-- <div class="row gy-5"></div> -->
-                  </div>
-                  <div
-                    class="tab-pane"
-                    id="men"
-                    role="tabpanel"
-                    aria-labelledby="men-tab"
-                  >
-                    Men
-                    <div class="row gy-5"></div>
-                  </div>
-                  <div
-                    class="tab-pane"
-                    id="women"
-                    role="tabpanel"
-                    aria-labelledby="women-tab"
-                  >
-                    Women
-                    <div class="row gy-5"></div>
-                  </div>
-                  <div
-                    class="tab-pane"
-                    id="nike"
-                    role="tabpanel"
-                    aria-labelledby="nike-tab"
-                  >
-                    Nike
-                    <div class="row gy-5"></div>
-                  </div>
-                  <div
-                    class="tab-pane"
-                    id="adidas"
-                    role="tabpanel"
-                    aria-labelledby="adidas-tab"
-                  >
-                    Adidas
-                    <div class="row gy-5"></div>
-                  </div>
-                  <div
-                    class="tab-pane"
-                    id="converse"
-                    role="tabpanel"
-                    aria-labelledby="converse-tab"
-                  >
-                    Converse
-                    <div class="row gy-5"></div>
-                  </div>
+            <div class="form-container sign-in">
+              <form>
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                  <a href="#" class="icon"
+                    ><i class="fa-brands fa-google-plus-g"></i
+                  ></a>
+                  <a href="#" class="icon"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="icon"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="#" class="icon"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </div>
+                <span>or use your email password</span>
+                <input type="email" placeholder="Email" id="emailSignIn" />
+                <input type="password" placeholder="Password" id="passSignIn" />
+                <a href="#">Forget Your Password?</a>
+                <button id="signin">Sign In</button>
+              </form>
+            </div>
+            <div class="toggle-container">
+              <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                  <h1>Welcome Back!</h1>
+                  <p>Enter your personal details to use all of site features</p>
+                  <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                  <h1>Hello, Friend!</h1>
+                  <p>
+                    Register with your personal details to use all of site
+                    features
+                  </p>
+                  <button class="hidden" id="register">Sign Up</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- END PRODUCT SHOES -->
-
-    <!-- FEATURE -->
-    <section class="feature">
-      <div class="container">
-        <div class="feature_content">
-          <h1 class="text-center">FEATURE PRODUCT</h1>
-          <div class="feature_product row"></div>
-        </div>
-      </div>
-    </section>
-    <!-- END FEATURE -->
-
-    <!-- FEED BACK -->
-    <section class="feed_back">
-      <div class="feed_back_ovelay">
-        <h3>LET CUSTOMERS SPEAK FOR US</h3>
-      </div>
-      <div class="container">
-        <div class="feed_back_content">
-          <div class="slick-feedback">
-            <div class="feed_card col-3" style="padding: 0 30px">
-              <div class="card-rate">
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Shoe Feedback</h5>
-                <p class="card-text">
-                  "I've been wearing these shoes for a few weeks now, and I'm
-                  really happy with them. I really recommend this shop"
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary">David</small>
-                </p>
-              </div>
-              <img
-                src="../Asset/img/air-jordan-legacy-312-low-shoes-6Vd4Xl (1).jpg.jfif"
-                class="card-img-bottom"
-                alt="..."
-              />
-            </div>
-            <div class="feed_card col-3" style="padding: 0 30px">
-              <div class="card-rate">
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Shoe Feedback</h5>
-                <p class="card-text">
-                  "I've been wearing these shoes for a few weeks now, and I'm
-                  really happy with them. I really recommend this shop"
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary">David</small>
-                </p>
-              </div>
-              <img
-                src="../Asset/img/air-jordan-legacy-312-low-shoes-6Vd4Xl.jfif"
-                class="card-img-bottom"
-                alt="..."
-              />
-            </div>
-            <div class="feed_card col-3" style="padding: 0 30px">
-              <div class="card-rate">
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Shoe Feedback</h5>
-                <p class="card-text">
-                  "I've been wearing these shoes for a few weeks now, and I'm
-                  really happy with them. I really recommend this shop"
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary">David</small>
-                </p>
-              </div>
-              <img
-                src="../Asset/img/ajko-1-shoes-RLJcHC.jfif"
-                class="card-img-bottom"
-                alt="..."
-              />
-            </div>
-            <div class="feed_card col-3" style="padding: 0 30px">
-              <div class="card-rate">
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Shoe Feedback</h5>
-                <p class="card-text">
-                  "I've been wearing these shoes for a few weeks now, and I'm
-                  really happy with them. I really recommend this shop"
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary">David</small>
-                </p>
-              </div>
-              <img
-                src="../Asset/img/jordan-nu-retro-1-low-shoes-8294mJ.jfif"
-                class="card-img-bottom"
-                alt="..."
-              />
-            </div>
-            <div class="feed_card col-3" style="padding: 0 30px">
-              <div class="card-rate">
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Shoe Feedback</h5>
-                <p class="card-text">
-                  "I've been wearing these shoes for a few weeks now, and I'm
-                  really happy with them. I really recommend this shop"
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary">David</small>
-                </p>
-              </div>
-              <img
-                src="../Asset/img/jordan-stay-loyal-3-shoes-GNHN2X.jfif"
-                class="card-img-bottom"
-                alt="..."
-              />
-            </div>
-            <div class="feed_card col-3" style="padding: 0 30px">
-              <div class="card-rate">
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Shoe Feedback</h5>
-                <p class="card-text">
-                  "I've been wearing these shoes for a few weeks now, and I'm
-                  really happy with them. I really recommend this shop"
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary">David</small>
-                </p>
-              </div>
-              <img
-                src="../Asset/img/air-jordan-legacy-312-low-shoes-6Vd4Xl.jfif"
-                class="card-img-bottom"
-                alt="..."
-              />
+      <!-- <button
+        type="button"
+        id="openModal"
+        data-bs-toggle="modal"
+        data-bs-target="#registerModal"
+        class="d-none"
+      ></button>
+      <div
+        class="modal fade"
+        id="registerModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button
+                type="button"
+                data-bs-dismiss="modal"
+                id="closeModal"
+                class="d-none"
+              ></button>
+              <p id="register-result">Register Account Successfully</p>
+              <i class="fa-solid fa-circle-check text-success"></i>
+              <i class="fa-solid fa-circle-xmark text-danger d-none"></i>
+              <div class="loadingBar"></div>
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
-    <!-- END FEED BACK -->
-
-    <!-- THE BLOG -->
-    <section class="blog">
-      <div class="container">
-        <div class="blog_content">
-          <h3>THE BLOG</h3>
-          <div class="blog_grid">
-            <div class="blog_item d-flex">
-              <!-- left -->
-              <div class="blog_item_left">
-                <img src="../asset/img/1.jpg" alt="" />
-              </div>
-              <!-- right -->
-              <div class="blog_item_right">
-                <h4>LOREM IPSUM DOLOR SIT AMET</h4>
-                <p>BY PLAZA THEMES - 17 AUG 2015 ( 0 COMMENTS )</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna...
-                </p>
-                <button>
-                  <a href="">Read More</a>
-                </button>
-              </div>
-            </div>
-            <div class="blog_item d-flex">
-              <!-- left -->
-              <div class="blog_item_left">
-                <img src="../asset/img/2.jpg" alt="" />
-              </div>
-              <!-- right -->
-              <div class="blog_item_right">
-                <h4>LOREM IPSUM DOLOR SIT AMET</h4>
-                <p>BY PLAZA THEMES - 17 AUG 2015 ( 0 COMMENTS )</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna...
-                </p>
-                <button>
-                  <a href="">Read More</a>
-                </button>
-              </div>
-            </div>
-            <div class="blog_item d-flex">
-              <!-- left -->
-              <div class="blog_item_left">
-                <img src="../asset/img/3.jpg" alt="" />
-              </div>
-              <!-- right -->
-              <div class="blog_item_right">
-                <h4>LOREM IPSUM DOLOR SIT AMET</h4>
-                <p>BY PLAZA THEMES - 17 AUG 2015 ( 0 COMMENTS )</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna...
-                </p>
-                <button>
-                  <a href="">Read More</a>
-                </button>
-              </div>
-            </div>
-            <div class="blog_item d-flex">
-              <!-- left -->
-              <div class="blog_item_left">
-                <img src="../asset/img/4.jpg" alt="" />
-              </div>
-              <!-- right -->
-              <div class="blog_item_right">
-                <h4>LOREM IPSUM DOLOR SIT AMET</h4>
-                <p>BY PLAZA THEMES - 17 AUG 2015 ( 0 COMMENTS )</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna...
-                </p>
-                <button>
-                  <a href="">Read More</a>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END THE BLOG -->
+    <!-- END REGISTER -->
 
     <!-- FOOTER -->
     <footer>
@@ -972,22 +619,22 @@
               <!-- Transfer -->
               <div class="footer_transfer d-flex">
                 <div class="transfer_card">
-                  <img src="../asset/img/ApplePay.png" alt="" />
+                  <img src="../../Asset/img/ApplePay.png" alt="" />
                 </div>
                 <div class="transfer_card">
-                  <img src="../asset/img/amex.png" alt="" />
+                  <img src="../../asset/img/amex.png" alt="" />
                 </div>
                 <div class="transfer_card">
-                  <img src="../asset/img/JCB.png" alt="" />
+                  <img src="../../asset/img/JCB.png" alt="" />
                 </div>
                 <div class="transfer_card">
-                  <img src="../asset/img/Master.png" alt="" />
+                  <img src="../../asset/img/Master.png" alt="" />
                 </div>
                 <div class="transfer_card">
-                  <img src="../asset/img/Paypal.png" alt="" />
+                  <img src="../../asset/img/Paypal.png" alt="" />
                 </div>
                 <div class="transfer_card">
-                  <img src="../asset/img/Visa.png" alt="" />
+                  <img src="../../asset/img/Visa.png" alt="" />
                 </div>
               </div>
             </div>
@@ -1008,6 +655,26 @@
         </div>
       </div>
     </footer>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="liveToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <strong class="me-auto">Thông báo</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body bg-white fw-bold"></div>
+      </div>
+    </div>
     <!-- END FOOTER -->
 
     <!-- BACK TO TOP -->
@@ -1047,7 +714,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="Asset/library/owl.carousel.min.js"></script>
+
+    <!-- <script src="asset/library/owl.carousel.min.js"></script> -->
     <script>
       $(document).ready(function () {
         $(".your-class").slick({
@@ -1088,30 +756,6 @@
       });
     </script>
 
-    <script>
-       $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-          loop: true,
-          autoplay: true,
-          responsiveClass: true,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            600: {
-              items: 2,
-            },
-            1000: {
-              items: 3,
-            },
-          },
-        });
-        $("#customer-carousel").owlCarousel({
-          dots: true,
-        });
-      });
-    </script>
-
     <!-- AXIOS -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.min.js"
@@ -1121,7 +765,10 @@
     ></script>
 
     <!-- MAIN JS -->
-    <script src="./controllers/helper.js"></script>
-    <script src="./controllers/main.js"></script>
+    <script src="../controllers/helper.js"></script>
+    <script src="./../models/User.js"></script>
+    <!-- <script src="../va"></script> -->
+    <script src="../controllers/register.js"></script>
+    <!-- <script src="../controllers/main.js"></script> -->
   </body>
 </html>
