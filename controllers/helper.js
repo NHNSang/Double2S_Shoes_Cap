@@ -1,7 +1,6 @@
 renderListShoe = (arr, id) => {
   let content = "";
   for (let i = 0; i < arr.length; i++) {
-    
     let item = arr[i];
     content += `
     <div class="owl-item">
@@ -53,7 +52,7 @@ renderTab = (arr) => {
   let categories_list = ["all", "men", "women", "adidas", "nike", "converse"];
   for (let i = 0; i < categories_list.length; i++) {
     document.querySelector(
-      `#${categories_list[i]} .owl-stage`
+      `#${categories_list[i]} .owl-carousel .owl-stage`
     ).innerHTML = arr[i];
     // console.log("hiuidifhdihfidhfhd");
   }
