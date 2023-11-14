@@ -1,6 +1,6 @@
 // Test
-let loiChao = 'Hello'
-console.log(loiChao)
+let loiChao = "Hello";
+console.log(loiChao);
 
 // For product
 let promise = axios({
@@ -12,18 +12,44 @@ promise
     // console.log(res.data.content);
     let arrShoe = res.data.content;
 
-    let stt = 1,
-      all = "",
-      men = "",
-      women = "",
-      adidas = "",
-      nike = "",
-      converse = "";
+    le = 1;
+    let all = "";
+    let men = "";
+    let women = "";
+    let adidas = "";
+    let nike = "";
+    let converse = "";
 
-    all = renderListShoe(arrShoe, stt, all);
-    console.log("demoooooo", all);
-    let demo = renderTab([all, men, women, adidas, nike, converse]);
-    console.log("dỳiosdiofgsoidgfisdgfigsd", demo);
+    // todo: update content for all shoe section
+    all = renderListShoe(arrShoe, "all");
+    // console.log('all',all)
+    // document.getElementById("flash_shoes").innerHTML = `${all}`;
+
+    // todo: update content for men shoe section
+    let men_shoe_arr = filterCategory(arrShoe, "men");
+    men = renderListShoe(men_shoe_arr, "men");
+
+    console.log("men", men);
+
+    // todo: update content for women shoe section
+    let women_shoe_arr = filterCategory(arrShoe, "women");
+    women = renderListShoe(women_shoe_arr, "women");
+
+    // todo: update content for adidas shoe section
+    let adidas_shoe_arr = filterCategory(arrShoe, "adidas");
+    adidas = renderListShoe(adidas_shoe_arr, "adidas");
+
+    // todo: update content for nike shoe section
+    let nike_shoe_arr = filterCategory(arrShoe, "nike");
+    nike = renderListShoe(nike_shoe_arr, "nike");
+
+    // todo: update content for converse shoe section
+    let converse_shoe_arr = filterCategory(arrShoe, "vans converse");
+    converse = renderListShoe(converse_shoe_arr, "converse");
+
+    // todo: rendering shoes following shoes categories
+    let cc = renderTab([all, men, women, adidas, nike, converse]);
+    console.log('cc',cc);
   })
   .catch((error) => {
     console.log(error);
@@ -31,25 +57,25 @@ promise
 
 // For Feature
 function getFeature() {
-    var promise = axios({
-      method: 'GET',
-      url: 'https://shop.cyberlearn.vn/api/Product/getProductByFeature',
+  var promise = axios({
+    method: "GET",
+    url: "https://shop.cyberlearn.vn/api/Product/getProductByFeature",
+  });
+  promise
+    .then(function (result) {
+      console.log(result.data.content);
+      RanderFeature(result.data.content);
+    })
+    .catch(function (error) {
+      console.log(error);
     });
-    promise
-      .then(function (result) {
-        console.log(result.data.content);
-        RanderFeature(result.data.content);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
 }
-getFeature()
+getFeature();
 function RanderFeature(arr) {
-    var content = '';
-    for (var i = 0; i < arr.length; i++) {
-      var productShoes = arr[i];
-      content += `
+  var content = "";
+  for (var i = 0; i < arr.length; i++) {
+    var productShoes = arr[i];
+    content += `
       <div class="feature_card col-3 col-md-6 col-lg-4">
       <div class="card h-100">
         <img src=${productShoes.image} class="card-img-top" alt="Sales Pic ${productShoes.id}">
@@ -72,8 +98,8 @@ function RanderFeature(arr) {
       </div>
         </div>
       
-      `
-    }
-  
-    document.querySelector('.feature_product').innerHTML = content;
+      `;
+  }
+
+  document.querySelector(".feature_product").innerHTML = content;
 }

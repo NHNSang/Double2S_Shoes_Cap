@@ -20,3 +20,12 @@
       color: $bg;
     }
   }
+
+  @mixin styleIcon($width, $height, $bg-color) {
+  width: $width;
+  height: $height;
+  text-align: center;
+  line-height: $height;
+  border-radius: 50%;
+  background-color: $bg-color;
+}
