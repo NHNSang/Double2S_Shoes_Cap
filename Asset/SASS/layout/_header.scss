@@ -59,34 +59,47 @@ header{
         .header_navbar{
             // HEADER_NAVAR DETEIL
             .header_navbar{
+                @media screen and (max-width: 414.98px){
+                    justify-content: start !important;
+                  }
                 .header_right{
                     .navbar{
                         .collapse{
-                            .nav-item{
-                                padding: 0 10px;
-                                &:hover ul.dropdown-menu{
-                                    display: block !important;
-                                }
-                                a.nav-link{
-                                    @include styleText($fs_3,$fw_500,$color_black);
-                                    position: relative;
-                                    &:hover::after{
-                                        opacity: 1;
-                                        // transition: all 0.5s;
+                            // @media screen and (max-width:992){
+                            //    display: block; 
+
+                            // }
+                            @media screen and (max-width:991.8px) {
+                               display: block; 
+                            }
+                            .navber_left{
+                                flex-direction: row;
+                                .nav-item{
+                                    padding: 0 10px;
+                                    &:hover ul.dropdown-menu{
+                                        display: block !important;
                                     }
-                                    &::after{
-                                        content: '';
-                                        position: absolute;
-                                        bottom: 0;
-                                        left: 0;
-                                        background-color: black;
-                                        width: 100%;
-                                        height: 3px;
-                                        opacity: 0;
+                                    a.nav-link{
+                                        @include styleText($fs_3,$fw_500,$color_black);
+                                        position: relative;
+                                        &:hover::after{
+                                            opacity: 1;
+                                            // transition: all 0.5s;
+                                        }
+                                        &::after{
+                                            content: '';
+                                            position: absolute;
+                                            bottom: 0;
+                                            left: 0;
+                                            background-color: black;
+                                            width: 100%;
+                                            height: 3px;
+                                            opacity: 0;
+                                        }
                                     }
-                                }
-                                ul.dropdown-menu{
-                                    display:none !important;
+                                    ul.dropdown-menu{
+                                        display:none !important;
+                                    }
                                 }
                             }
                         }
@@ -98,7 +111,12 @@ header{
             .header_menu{
                 ul{
                     z-index: 1000;
-                
+                    @media screen and (max-width: 414.98px){
+                        font-size: 12px;
+                        position: absolute;
+                        right: 0;
+                        bottom: 27px;
+                      }
                     .nav-item{
                         list-style: none;
                         padding: 0 10px;
@@ -165,8 +183,20 @@ header{
             position: absolute;
             top: -9px;
             left: 18px;
+            @media screen and (max-width:575.98px) {
+                top: -45px;
+                }
+            
             a{
                 color: $color_black;
+                i{
+                    @media screen and (max-width:575.98px) {
+                        font-size: 50px;
+                        }
+                    @media screen and (max-width: 414.98px){
+                            font-size: 40px;
+                          }
+                }
             }
         }
     }
@@ -188,14 +218,3 @@ header{
     border: 1px solid #d9cccc;
 }
 
-@keyframes zoomIn{
-    from{
-        opacity: 0;
-        transform: scale(0);
-    }
-    to{
-        opacity: 1;
-        transform: scale(1);
-
-    }
-}

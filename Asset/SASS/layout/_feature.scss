@@ -4,21 +4,36 @@
     .feature_content{
         padding-bottom: 20px;
 
-        p{
-        @include styleText($fs_3,$fw_bold,$color_black);
-        transition: all 0.3s;
-        &:hover{
-        @include styleText($fs_3,$fw_bold,#2ed573);
-        }
+        h1  {
+        @include styleText($fs_6,$fw_bold,$color_black);
+        padding-bottom: 20px;
+        // transition: all 0.3s;
+        // &:hover{
+        // @include styleText($fs_3,$fw_bold,#2ed573);
+        // }
         }
         .feature_product{
+             
             .feature_card{
-                
+                animation-name: zoomIn;
+                    animation-duration: 2s ;
                 width: 25%;
                 height: 375px;
                 padding-bottom:15px ;
+                @media screen and (max-width: 767.98px) {
+                    width: 33%;
+                    height: 350px;
+                }
+                @media screen and (max-width:575.98px) {
+                    width: 25%;
+                    height: 240px;
+                }
+                @media screen and (max-width: 414.98px){
+                    width: 33%;
+                    height: 260px;
+                  }
                 .card{
-                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
+                    box-shadow: rgba(11, 2, 2, 0.24) 0px 3px 8px;    
                     img{}
                     .card-body{
                         padding: 0;
@@ -27,11 +42,17 @@
                         text-align: center;
                         a{
                             text-decoration: none;
-                            h5{
+                            p{
                                 @include styleText($fs_3,$fw_bold,$color_black_blur );
+                                @media screen and (max-width:575.98px) {
+                                    font-size: 13px;
+                                }
                             }
                         }
                         .info_stars{
+                            @media screen and (max-width:575.98px) {
+                                font-size: 10px;
+                            }
                             i{
                                 color:#ffc107;
                             }
@@ -45,5 +66,17 @@
                 }
             }
         }
+    }
+}
+
+@keyframes zoomIn{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+
     }
 }

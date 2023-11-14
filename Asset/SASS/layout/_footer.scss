@@ -2,9 +2,23 @@
 footer{
     background-color: black;
     height: 330px;
+    @media screen and (max-width: 767.98px) {
+        min-height: 75vh;
+    }
+    @media screen and (max-width: 575.98px) {
+        min-height: 90vh;
+
+    }
+    @media screen and (max-width: 414.98px){
+        min-height: 95vh;
+
+      }
     .footer_content{
         .footer_body{
             padding-top: 35px;
+            @media screen and (max-width: 767.98px) {
+                display: block !important;
+            }
             .footer_left{
                 .footer_find{
                     ul{
@@ -41,6 +55,14 @@ footer{
                 }
             }
             .footer_right{
+                @media screen and (max-width: 767.98px) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                @media screen and (max-width: 575.98px) {
+                    flex-direction: column;
+                }
                 .footer_social{
                     .footer_icon_social{
                         margin: 0 10px;;
@@ -70,6 +92,10 @@ footer{
         }
         .footer_coppy{
             padding-top: 25px;
+            @media screen and (max-width: 575.98px) {
+                flex-direction: column;
+                align-items: center;
+            }
             .coppy_left{
                 p{
                     @include styleText($fs_2,

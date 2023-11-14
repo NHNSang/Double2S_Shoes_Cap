@@ -14,6 +14,7 @@
                 // background-color: #c1f5ee;
                 border-radius: 10px;
                 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                
             }
             .item_white_background{
                 position: absolute;
@@ -33,6 +34,10 @@
                     top: 2vw;
                     left: 50%;
                     transform: translateX(-50%);
+                    @media screen and (max-width:575.98px) {
+                        width: 100%;
+                        left: 80%;
+                    }
                     a{
                         // text-decoration: underline;
                         @include styleText($fs_4,$fw_500,$color_black);
@@ -49,11 +54,31 @@
                     object-fit: cover;
                     position: relative;
                     top: 2vw;
-                    left: 62%;
+                    left: 30%;
                     transform: translateX(-50%);
+                    animation: lightSpin 2s infinite;
                 }
             }
             
         }
+    }
+}
+
+@keyframes lightSpin{
+    0% {
+        transform: rotate(0);
+    }
+    
+    25% {
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(0);
     }
 }
