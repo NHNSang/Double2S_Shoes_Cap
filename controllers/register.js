@@ -36,41 +36,12 @@ createUser.onclick = (evt) => {
     console.log("thanh cong", res);
     openToast(res.data.message);
 
-    // document.getElementById("register-result").innerHTML =
-    //   "Register Account Successfully";
-    // document.querySelector(".modal-body .loadingBar").style.backgroundColor =
-    //   "green";
-    // document
-    //   .querySelector(".modal-body i.text-success")
-    //   .classList.remove("d-none");
-    // document.querySelector(".modal-body i.text-danger").classList.add("d-none");
-    // document.getElementById("openModal").click();
-    // setTimeout(() => {
-    //   document.getElementById("closeModal").click();
-    // }, 2000);
-    // setTimeout(() => {
-    //   window.location.href = "../index.html";
-    // }, 2500);
+
   });
   promise.catch((err) => {
     console.log(err);
     openToast("Đăng ký thất bại");
 
-    // document.getElementById("email-alert").innerHTML =
-    //   "This email existed. Please try another one!";
-    // document.querySelector(".modal-body .loadingBar").style.backgroundColor =
-    //   "red";
-    // document.getElementById("register-result").innerHTML = "Email Existed";
-    // document
-    //   .querySelector(".modal-body i.text-success")
-    //   .classList.add("d-none");
-    // document
-    //   .querySelector(".modal-body i.text-danger")
-    //   .classList.remove("d-none");
-    // document.getElementById("openModal").click();
-    // setTimeout(() => {
-    //   document.getElementById("closeModal").click();
-    // }, 2000);
   });
 };
 

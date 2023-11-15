@@ -57,6 +57,9 @@ header{
         }
         // HEADER NAVBAR
         .header_navbar{
+            @media screen and (max-width: 413.98px) {
+                justify-content: center !important;
+            }
             // HEADER_NAVAR DETEIL
             .header_navbar{
                 @media screen and (max-width: 414.98px){
@@ -109,6 +112,11 @@ header{
 
             // HEADER_MENU DETEIL
             .header_menu{
+                @media screen and (max-width: 413.98px){
+                    position: absolute;
+                    right: 30px;
+                    bottom: 18px;
+                  }
                 ul{
                     z-index: 1000;
                     @media screen and (max-width: 414.98px){

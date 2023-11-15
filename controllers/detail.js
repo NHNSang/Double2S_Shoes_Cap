@@ -32,7 +32,7 @@ getDetail
 
     for (let item of relatedProducts) {
       render += `
-       <div class="sales_container">
+       <div class="sales_container text-center">
       <!-- todo: sale-img -->
       <div class="sales_img">
         <img src=${item.image} alt="Sales Pic 1" />
@@ -40,16 +40,16 @@ getDetail
           <i class="fa-regular fa-heart" onclick="likeShoes(this)"></i>
           <i class="fa-regular fa-images"></i>
         </div>
-        <div class="img_add">
+        <div class="img_add py-2">
           <h5>QUICK ADD</h5>
         </div>
       </div>
       <!-- todo: sale-info -->
       <div class="sales_info">
-        <a href="./detail.html?id=${item.id}">
+        <a class='text-decoration-none text-black' href="./detail.html?id=${item.id}">
           <h4>${item.name}</h4>
         </a>
-        <div class="info_stars">
+        <div class="info_stars py-2">
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>

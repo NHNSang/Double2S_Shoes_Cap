@@ -31,6 +31,9 @@
                     text-align: center;
                     .card-rate{
                         color: yellow;
+                        @media screen and (max-width: 413.98px) {
+                            font-size: 12px;
+                        }
                     }
                     .card-body{
                         .card-title{
