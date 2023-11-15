@@ -601,6 +601,12 @@ header .header_content .header_bottom a {
 .product__list .products .row .col-lg-9 .row .tab-content .tab-pane #flash_shoes .owl-stage-outer .owl-stage .owl-item .item_container:hover .img_add {
   transform: translateY(0);
 }
+.product__list .products .row .col-lg-9 .row .tab-content .tab-pane #flash_shoes .owl-nav {
+  display: none;
+}
+.product__list .products .row .col-lg-9 .row .tab-content .tab-pane #flash_shoes .owl-dots {
+  display: none;
+}
 
 .feature {
   padding-bottom: 50px;
