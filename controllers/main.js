@@ -46,7 +46,7 @@ promise
     // todo: update content for converse shoe section
     // let converse_shoe_arr = filterCategory(arrShoe, "vans converse");
     converse = renderListShoe(converse_shoe_arr, "converse");
-    console.log('converse',converse)
+    console.log("converse", converse);
 
     // todo: rendering shoes following shoes categories
     // let cc = renderTab([all, men, women, adidas, nike, converse]);
@@ -77,11 +77,24 @@ function RanderFeature(arr) {
   for (var i = 0; i < arr.length; i++) {
     var productShoes = arr[i];
     content += `
-      <div class="feature_card col-3 col-md-6 col-lg-4">
-      <div class="card h-100">
+      <div class="feature_card col-sm-3 col-md-6 col-lg-4">
+      <div class="card ">
         <img src=${productShoes.image} class="card-img-top" alt="Sales Pic ${productShoes.id}">
+        <div class="img_percent">
+              <span>NEW</span>
+        </div>
+        <div class="img_interact">
+                            <i
+                              class="fa-regular fa-heart"
+                              onclick="likeShoes(this)"
+                            ></i>
+                            <i class="fa fa-search"></i>
+                          </div>
+                          <div class="img_add">
+                            <h5>QUICK ADD</h5>
+                          </div>
         <div class="card-body">
-            <a href="../views/detail.html?id=${productShoes.id}">
+            <a href="../pages/detail.html?id=${productShoes.id}">
                 <p class="card-title">${productShoes.name}</p>
             </a>
           <div class="info_stars">

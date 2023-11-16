@@ -1,10 +1,10 @@
-function renderListShoe(arr, id) {
+function renderListShoe(arr) {
   let content = "";
   for (let i = 0; i < arr.length; i++) {
     let item = arr[i];
     // let widthItem = 100 / arr.length;
     content += `
-    <div class="owl-item" >
+    <div class="feature_card col-6" >
     <div class="item_container">
                         <div class="sales_img">
                           <img src="${item.image}" alt="Sales Pic ${item.id}" />
@@ -46,8 +46,9 @@ function renderListShoe(arr, id) {
     `;
   }
   // console.log(content);
-  return content;
+  // return content;
   // return (document.querySelector(`#${id} .owl-carousel`).innerHTML = content);
+    document.querySelector(".feature_product").innerHTML = content;
 }
 
 renderTab = (arr) => {

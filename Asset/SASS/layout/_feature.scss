@@ -1,82 +1,177 @@
 // FEATURE
-.feature{
-    padding-bottom: 50px;
-    .feature_content{
-        padding-bottom: 20px;
+.feature {
+  padding-bottom: 50px;
+  .feature_content {
+    padding-bottom: 20px;
 
-        h1  {
-        @include styleText($fs_6,$fw_bold,$color_black);
-        padding-bottom: 20px;
-        // transition: all 0.3s;
-        // &:hover{
-        // @include styleText($fs_3,$fw_bold,#2ed573);
-        // }
-        }
-        .feature_product{
-             
-            .feature_card{
-                animation-name: zoomIn;
-                    animation-duration: 2s ;
-                width: 25%;
-                height: 375px;
-                padding-bottom:15px ;
-                @media screen and (max-width: 767.98px) {
-                    width: 33%;
-                    height: 350px;
-                }
-                @media screen and (max-width:575.98px) {
-                    width: 25%;
-                    height: 240px;
-                }
-                @media screen and (max-width: 414.98px){
-                    width: 33%;
-                    height: 260px;
-                  }
-                .card{
-                    box-shadow: rgba(11, 2, 2, 0.24) 0px 3px 8px;    
-                    img{}
-                    .card-body{
-                        padding: 0;
-                        display: flex;
-                        flex-direction: column;
-                        text-align: center;
-                        a{
-                            text-decoration: none;
-                            p{
-                                @include styleText($fs_3,$fw_bold,$color_black_blur );
-                                @media screen and (max-width:575.98px) {
-                                    font-size: 13px;
-                                }
-                            }
-                        }
-                        .info_stars{
-                            @media screen and (max-width:575.98px) {
-                                font-size: 10px;
-                            }
-                            i{
-                                color:#ffc107;
-                            }
-                        }
-                        .info_prices {
-                            .card-text{
-                                @include styleText($fs_3,$fw_bold,$color_black_blur );
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    h1 {
+      @include styleText($fs_6, $fw_bold, $color_black);
+      padding-bottom: 20px;
+      // transition: all 0.3s;
+      // &:hover{
+      // @include styleText($fs_3,$fw_bold,#2ed573);
+      // }
     }
+    .feature_product {
+      .feature_card {
+        animation-name: zoomIn;
+        animation-duration: 2s;
+        height: auto;
+        
+       
+        .card {
+          box-shadow: rgba(11, 2, 2, 0.24) 0px 3px 8px;
+          position: relative;
+          overflow: hidden;
+          cursor: pointer;
+          padding: 0 20px;
+          transition: all 0.4s;
+          img {
+            width: 100%;
+            object-fit: contain;
+            transition: all 0.5s ease;
+            aspect-ratio: 1 / 1.1;
+            margin: 20px 0;
+          }
+          .img_percent {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #bbf3ff;
+            border-radius: 20px;
+            padding: 5px 14px;
+            @media screen and (max-width: 818px) {
+              top: 15px;
+              font-size: 10px;
+              padding: 4px 8px;
+            }
+            @media screen and (max-width: 575px) {
+              top: 5px;
+              left: 10px;
+              font-size: 10px;
+              padding: 3px 5px;
+            }
+          }
+          .img_interact {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            i {
+              @include styleIcon(30px, 30px, rgb(216, 216, 216));
+              height: 30px;
+              text-align: center;
+              font-size: $fs_2;
+              color: gray;
+              margin-right: 10px;
+              transition: all 0.5s;
+              transform: translateX(105px);
+
+              box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
+              transition: all 0.5s;
+              &:nth-child(1) {
+                &:hover {
+                  background-color: rgba(139, 34, 34, 0.483);
+                  color: white;
+                }
+                &.active {
+                  background-color: rgba(139, 34, 34, 0.483);
+                  color: rgb(46, 43, 43);
+                }
+              }
+              &:nth-child(2) {
+                transition: all 0.7s;
+              }
+              &:hover {
+                background-color: black;
+                color: white;
+              }
+            }
+          }
+          .img_add {
+            position: absolute;
+            text-align: center;
+            background-color: rgb(206, 206, 206);
+            bottom: 130px;
+            left: 5%;
+            width: 90%;
+            margin: 0 auto;
+            border-radius: 50px;
+            padding: 0 20px;
+            transition: all 0.5s;
+            justify-content: center;
+            // transform: o;
+            opacity: 0;
+            @media screen and (max-width: 592px) {
+              display: none;
+            }
+            h5 {
+              @include styleText($fs_2, $fw_bold, dark);
+              margin: 0;
+              line-height: 50px;
+              @media screen and (max-width: 575.98px) {
+                font-size: 13px;
+              }
+            }
+            &:hover {
+              background: #000;
+              color: white;
+            }
+          }
+          .card-body {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            a {
+              text-decoration: none;
+              p {
+                @include styleText($fs_3, $fw_bold, $color_black_blur);
+                @media screen and (max-width: 575.98px) {
+                  font-size: 13px;
+                }
+              }
+            }
+            .info_stars {
+              @media screen and (max-width: 575.98px) {
+                font-size: 10px;
+              }
+              i {
+                color: #ffc107;
+              }
+            }
+            .info_prices {
+              .card-text {
+                @include styleText($fs_3, $fw_bold, $color_black_blur);
+              }
+            }
+          }
+        }
+        &:hover {
+          img {
+            filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.5));
+          }
+          .img_interact {
+            i {
+              transform: translateX(0);
+            }
+          }
+          .img_add{
+            // transform: translateY(0);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
 }
 
-@keyframes zoomIn{
-    from{
-        opacity: 0;
-        transform: scale(0);
-    }
-    to{
-        opacity: 1;
-        transform: scale(1);
-
-    }
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
