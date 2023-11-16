@@ -22,11 +22,11 @@ promise
 
     // todo: update content for all shoe section
     all = renderListShoe(arrShoe, "all");
-    // console.log('all',all)
+    console.log("all", all);
     // document.getElementById("flash_shoes").innerHTML = `${all}`;
 
     // todo: update content for men shoe section
-    let men_shoe_arr = filterCategory(arrShoe, "men");
+    // let men_shoe_arr = filterCategory(arrShoe, "men");
     men = renderListShoe(men_shoe_arr, "men");
 
     console.log("men", men);
@@ -36,23 +36,24 @@ promise
     women = renderListShoe(women_shoe_arr, "women");
 
     // todo: update content for adidas shoe section
-    let adidas_shoe_arr = filterCategory(arrShoe, "adidas");
+    // let adidas_shoe_arr = filterCategory(arrShoe, "adidas");
     adidas = renderListShoe(adidas_shoe_arr, "adidas");
 
     // todo: update content for nike shoe section
-    let nike_shoe_arr = filterCategory(arrShoe, "nike");
+    // let nike_shoe_arr = filterCategory(arrShoe, "nike");
     nike = renderListShoe(nike_shoe_arr, "nike");
 
     // todo: update content for converse shoe section
-    let converse_shoe_arr = filterCategory(arrShoe, "vans converse");
+    // let converse_shoe_arr = filterCategory(arrShoe, "vans converse");
     converse = renderListShoe(converse_shoe_arr, "converse");
+    console.log('converse',converse)
 
     // todo: rendering shoes following shoes categories
-    let cc = renderTab([all, men, women, adidas, nike, converse]);
-    console.log('cc',cc);
+    // let cc = renderTab([all, men, women, adidas, nike, converse]);
+    // console.log('cc',cc);
   })
   .catch((error) => {
-    console.log(error);
+    console.log("error", error);
   });
 
 // For Feature
