@@ -1,9 +1,10 @@
-renderListShoe = (arr, id) => {
+function renderListShoe(arr, id) {
   let content = "";
   for (let i = 0; i < arr.length; i++) {
     let item = arr[i];
+    // let widthItem = 100 / arr.length;
     content += `
-    <div class="owl-item">
+    <div class="owl-item" >
     <div class="item_container">
                         <div class="sales_img">
                           <img src="${item.image}" alt="Sales Pic ${item.id}" />
@@ -46,14 +47,14 @@ renderListShoe = (arr, id) => {
   }
   // console.log(content);
   return content;
-};
+  // return (document.querySelector(`#${id} .owl-carousel`).innerHTML = content);
+}
 
 renderTab = (arr) => {
   let categories_list = ["all", "men", "women", "adidas", "nike", "converse"];
   for (let i = 0; i < categories_list.length; i++) {
-    document.querySelector(
-      `#${categories_list[i]} .owl-carousel .owl-stage`
-    ).innerHTML = arr[i];
+    document.querySelector(`#${categories_list[i]} .owl-carousel `).innerHTML =
+      arr[i];
     // console.log("hiuidifhdihfidhfhd");
   }
 };
