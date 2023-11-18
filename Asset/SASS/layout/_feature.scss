@@ -17,10 +17,9 @@
         animation-name: zoomIn;
         animation-duration: 2s;
         height: auto;
-        
-       
+
         .card {
-          box-shadow: rgba(11, 2, 2, 0.24) 0px 3px 8px;
+          // box-shadow: rgba(11, 2, 2, 0.24) 0px 3px 8px;
           position: relative;
           overflow: hidden;
           cursor: pointer;
@@ -99,11 +98,11 @@
             padding: 0 20px;
             transition: all 0.5s;
             justify-content: center;
-            // transform: o;
+            transform: translateY(70px);
             opacity: 0;
-            @media screen and (max-width: 592px) {
-              display: none;
-            }
+            // @media screen and (max-width: 592px) {
+            //   display: none;
+            // }
             h5 {
               @include styleText($fs_2, $fw_bold, dark);
               margin: 0;
@@ -115,6 +114,7 @@
             &:hover {
               background: #000;
               color: white;
+              z-index: 110;
             }
           }
           .card-body {
@@ -142,6 +142,7 @@
             .info_prices {
               .card-text {
                 @include styleText($fs_3, $fw_bold, $color_black_blur);
+                margin-bottom: 30px;
               }
             }
           }
@@ -155,8 +156,8 @@
               transform: translateX(0);
             }
           }
-          .img_add{
-            // transform: translateY(0);
+          .img_add {
+            transform: translateY(0);
             opacity: 1;
           }
         }
