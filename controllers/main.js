@@ -77,9 +77,9 @@ function RanderFeature(arr) {
   for (var i = 0; i < arr.length; i++) {
     var productShoes = arr[i];
     content += `
-      <div class="feature_card col-sm-3 col-md-6 col-lg-4">
+      <div class="feature_card my-4 col-sm-12 col-md-6 col-lg-4">
       <div class="card ">
-        <img src=${productShoes.image} class="card-img-top" alt="Sales Pic ${productShoes.id}">
+        <img src=${productShoes.image} class="w-100" alt="Sales Pic ${productShoes.id}">
         <div class="img_percent">
               <span>NEW</span>
         </div>
