@@ -212,8 +212,11 @@
 .container {
   max-width: 1170px;
   padding: 0 15px;
-  @media only screen and (min-width: 480px) and (max-width: 767px) {
-    width: 450px;
+  @media only screen and (min-width: 420px) and (max-width: 767px) {
+    width: 400px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 390px;
   }
 }
 header {
